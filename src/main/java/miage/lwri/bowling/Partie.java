@@ -31,7 +31,12 @@ public class Partie {
         if (this.jeux.get(9).isStrike()) {
                 score += 10;
                 if (this.jeux.get(9).isStrike()) {
-                    score += 20;
+                    score += this.jeux.get(10).getLance1();
+                    if (this.jeux.get(10).isStrike()) {
+                        score += this.jeux.get(11).getLance1();
+                    } else {
+                        score += this.jeux.get(10).getLance2();
+                    }
                 }
                 else {
                     score += this.jeux.get(10).getScore();

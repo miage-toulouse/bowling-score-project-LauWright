@@ -41,7 +41,7 @@ public class PartieTest {
     public void testCalculeScorePartieAvecUniquementDesStrikes(){
         // given: Une partie de 10 jeu avec Strike pour tous les jeux
         List<Jeu> jeux = new ArrayList<>();
-        for (int i = 0; i<11; i++) {
+        for (int i = 0; i<12; i++) {
             jeux.add(new Jeu(10, null));
         }
         Partie lapartie = new Partie(jeux);
